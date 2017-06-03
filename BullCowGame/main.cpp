@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <string>
+#include "FBullCowGame.h"
 
 using namespace std;
 
@@ -22,10 +23,6 @@ int main()
 		bPlayAgain = AskToPlayAgain();
 	}
 	while (bPlayAgain);
-
-
-
-	
 
 	return 0; // exit the application
 }
