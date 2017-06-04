@@ -4,15 +4,17 @@
 
 class FBullCowGame {
 public:
+	int GetMaxTries() const; // not allowed to modify any values
+	int GetCurrentTry() const;
+	bool IsGameWon() const;
+
+	// these must eventually change some values
 	void Reset(); // TODO make a more rich return value
-	int GetMaxTries();
-	int GetCurrentTry();
-	bool IsGameWon();
 	bool CheckGuessValidiy(std::string); // TODO make a more rich return value
 
 
 private:
-	int MyCurrentTry;
-	int MyMaxTries;
+	int MyCurrentTry = 1;
+	int MyMaxTries = 5;
 
 };
